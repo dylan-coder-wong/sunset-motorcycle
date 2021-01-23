@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Motorcycle Driving Game</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        .centered {
+            position: fixed;
+            top: 20%;
+            left: 23%;
+        }
+    </style>
+</head>
+<link rel="stylesheet" href="styles.css">
+<body>
+    <div>
+        <label class="title" class="type">Motorcycle Driving Game</label>
+        <div class="center"></div>
+            <button class="left" id="left" onclick="left();"><</button>
+            <h1 id="h1" class="score">0</h1>
+            <h1 class="hi"> gold: </h1>     
+            <button class="restart" id="reset" onclick="startGame();"> Restart </button>
+            <button class="died" id="died"> You died </button>
+            <img class="first" id="selection" src="good.png" /> 
+            <button class="earn" id="earned"> You earned a new Motorcycle! </button>
+            <button onclick="startGame();" class="button" id="start"> Start ▶️ </button>
+            <button class="right" id="right" onclick="right();">></button>
+            <button onclick="SetGameSettings();" id="settings" class="Settings"> Settings ⚙️ </button>
+            <button onclick="showHowToPlay();" id="howPlay" class="HowToPlay"> How to play 🧭</button>
+            <button class="rate" id="rate"> Please Rate Our Game! </button>
+            <button class="directions" id="directions" onclick="donedid();">Use the up arrow key to accelarate. Use the left arrow key to rotate left. <br> You can not press the right or down key though. <br> You can earn gold by constantly pressing the up key. <br><br> Click this button to close</button>
+            <button id="close" class="close"> Click to close </button>
+            <button class="shop" id="shop" onclick="shop();">shop  🛒 </button>
+            <button id="VIP" class="VIP"> Become VIP now and get better overall Motorcycles. You can also costimize them! Click this button to get prizes! </button>
+            <button class="motor" id="motor"> Pick Your Motorcycle </button>
+            <canvas id="game" class="centered" width="1500" height="700"></canvas>
+            <button class="home" id="home" onclick="by();">Home</button>
+            <button class="backButton" id="back" onclick="backb();"> 🔙 </button>
+            <button class="red" id="red" onclick="buy();"> buy a motorcycle </button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

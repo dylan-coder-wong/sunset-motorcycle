@@ -1,0 +1,383 @@
+.button {
+    border: 1px solid black;
+    position: relative;
+    top: 750px;
+    z-index: 1;
+    left: 945px;
+    height: 100px;
+    width: 200px;
+    font-size: xxx-large;
+    color: rgb(255, 255, 255);
+    background-color: #29D;
+    box-shadow: 0px 10px #BBB;
+    color: rgb(255, 230, 0);
+    size: 10;
+    border-radius: 100px;
+}
+
+.red {
+    border: 1px solid black;
+    position: relative;
+    top: 500px;
+    z-index: 1;
+    left: 950px;
+    height: 350px;
+    width: 250px;
+    font-size: xxx-large;
+    color: rgb(255, 255, 255);
+    background-color: rgb(165, 221, 34);
+    box-shadow: 0px 10px #BBB;
+    color: rgb(255, 230, 0);
+    size: 10;
+    border-radius: 10px;
+}
+
+.backButton {
+    border: 1px solid black;
+    position: relative;
+    top: 900px;
+    z-index: 1;
+    left: 1180px;
+    height: 100px;
+    width: 200px;
+    font-size: xxx-large;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 0, 0);
+    box-shadow: 0px 10px #BBB;
+    color: rgb(255, 230, 0);
+    size: 10;
+    border-radius: 10px;
+}
+
+.VIP {
+    border: 1px solid black;
+    position: fixed;
+    top: 900px;
+    z-index: 1;
+    left: 800px;
+    height: 200px;
+    width: 1000px;
+    font-size: xxx-large;
+    color: rgb(255, 255, 255);
+    background-color: rgb(221, 177, 34);
+    box-shadow: 0px 10px #BBB;
+    color: rgb(0, 255, 76);
+    size: 10;
+    border-radius: 10px;
+}
+
+.earn {
+    border: 1px solid black;
+    position: relative;
+    top: 900px;
+    z-index: 1;
+    left: 800px;
+    height: 200px;
+    width: 1000px;
+    font-size: xxx-large;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 10px #BBB;
+    color: rgb(255, 230, 0);
+    size: 10;
+    border-radius: 10px;
+}
+
+.restart {
+    border: 1px solid black;
+    position: relative;
+    top: 670px;
+    z-index: 1;
+    left: 1300px;
+    height: 100px;
+    width: 200px;
+    font-size: xxx-large;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 0, 0);
+    box-shadow: 0px 10px #BBB;
+    color: rgb(0, 47, 255);
+    size: 10;
+    border-radius: 10px;
+}
+
+
+.died {
+    border: 1px solid black;
+    position: relative;
+    top: 430px;
+    z-index: 1;
+    left: 620px;
+    height: 200px;
+    width: 1000px;
+    font-size: xxx-large;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 0, 0);
+    box-shadow: 0px 10px #BBB;
+    color: rgb(0, 47, 255);
+    size: 10;
+    border-radius: 10px;
+}
+
+.home {
+    border: 1px solid black;
+    position: relative;
+    top: 670px;
+    z-index: 1;
+    left: -200px;
+    height: 100px;
+    width: 200px;
+    font-size: xxx-large;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0px 10px #BBB;
+    color: rgb(0, 255, 55);
+    size: 10;
+    border-radius: 10px;
+}
+
+.first {
+    height: 250px;
+    width: 250px;
+    position: relative;
+    top: 600px;
+    left: 1140px;
+    z-index: 1;
+}
+
+.second {
+    height: 250px;
+    width: 250px;
+    position: relative;
+    top: 600px;
+    left: 250px;
+    z-index: 1;
+}
+
+.score {
+    position: fixed;
+    top: 27%;
+    left: 30%;
+    z-index: 1;
+    height: 100;
+    width: 10;
+}
+
+.hi {
+    position: fixed;
+    top: 27%;
+    left: 27%;
+    z-index: 1;
+    height: 100;
+    width: 10;
+}
+
+.close {
+    border: 1px solid black;
+    position: fixed;
+    top: 50%;
+    z-index: 1;
+    left: 45%;
+    height: 100px;
+    width: 200px;
+    font-size: xxx-large;
+    color: rgb(255, 255, 255);
+    background-color: #29D;
+    box-shadow: 0px 10px #BBB;
+    color: rgb(255, 230, 0);
+    size: 10;
+    border-radius: 100px;
+}
+
+.rate {
+    border: 1px solid black;
+    position: fixed;
+    top: 90%;
+    z-index: 1;
+    left: 45%;
+    height: 100px;
+    width: 200px;
+    font-size: xx-large;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0px 10px #BBB;
+    color: rgb(255, 230, 0);
+    size: 10;
+    border-radius: 10px;
+    animation: bounce 5s infinite;
+}
+
+@keyframes bounce {
+    0% {
+        transition-delay: 10s;
+    }
+    50% {
+        transition-delay: 2s;
+        transform: translateY(180px)
+    }
+}
+
+.directions {
+    border: 1px solid black;
+    position: fixed;
+    top: 26%;
+    z-index: 3;
+    left: 30%;
+    height: 750px;
+    width: 1000px;
+    font-size: xxx-large;
+    color: rgb(255, 255, 255);
+    background-color: rgb(47, 105, 122);
+    box-shadow: 0px 10px #BBB;
+    color: rgb(255, 196, 107);
+    size: 10;
+    border-radius: 100px;
+}
+
+.motor {
+    border: 1px solid black;
+    position: fixed;
+    top: 26%;
+    z-index: 1;
+    left: 37%;
+    height: 150px;
+    width: 700px;
+    font-size: xxx-large;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 0, 0);
+    box-shadow: 0px 10px #BBB;
+    color: rgb(255, 230, 0);
+    size: 10;
+    border-radius: 10px;
+}
+
+.right {
+    border: 1px solid black;
+    position: fixed;
+    top: 50%;
+    z-index: 1;
+    left: 60%;
+    height: 60px;
+    width: 160px;
+    font-size: xxx-large;
+    color: rgb(255, 255, 255);
+    background-color: rgb(250, 0, 208);
+    box-shadow: 0px 10px #BBB;
+    color: rgb(255, 255, 255);
+    size: 10;
+    border-radius: 100px;
+}
+
+.left {
+    border: 1px solid black;
+    position: fixed;
+    top: 50%;
+    z-index: 1;
+    left: 35%;
+    height: 60px;
+    width: 160px;
+    font-size: xxx-large;
+    color: rgb(255, 255, 255);
+    background-color: rgb(250, 0, 208);
+    box-shadow: 0px 10px #BBB;
+    color: rgb(255, 255, 255);
+    size: 10;
+    border-radius: 100px;
+}
+
+.Settings {
+    border: 1px solid black;
+    position: fixed;
+    top: 70%;
+    z-index: 1;
+    left: 32%;
+    height: 60px;
+    width: 200px;
+    font-size: xx-large;
+    color: rgb(255, 255, 255);
+    background-color: rgb(58, 250, 0);
+    box-shadow: 0px 10px #BBB;
+    color: rgb(255, 230, 0);
+    size: 10;
+    border-radius: 10px;
+}
+
+.shop {
+    border: 1px solid black;
+    position: fixed;
+    top: 27%;
+    z-index: 1;
+    left: 65%;
+    height: 60px;
+    width: 200px;
+    font-size: xx-large;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 250, 217);
+    box-shadow: 0px 10px #BBB;
+    color: rgb(255, 230, 0);
+    size: 10;
+    border-radius: 10px;
+}
+
+.HowToPlay {
+    border: 1px solid black;
+    position: fixed;
+    top: 70%;
+    z-index: 1;
+    left: 62%;
+    height: 64px;
+    width: 190px;
+    font-size: x-large;
+    color: rgb(255, 255, 255);
+    background-color: rgb(171, 0, 250);
+    box-shadow: 0px 10px #BBB;
+    color: rgb(255, 230, 0);
+    size: 10;
+    border-radius: 10px;
+}
+
+
+body {
+    height: 100vh;
+    background: 
+        linear-gradient(45deg, rgb(76, 0, 255), transparent),
+        repeating-linear-gradient(45deg, rgb(105, 67, 245) 0%, rgb(76, 0, 255) 5%, transparent 5%, transparent 10%),
+        rgb(0, 195, 255) repeating-linear-gradient(-45deg, rgba(47, 0, 255, 0.5) 0%, rgba(183, 0, 255, 0.5) 5%, transparent 5%, transparent 10%);
+}
+
+.center {
+    border: 10px solid black;
+    position: fixed;
+    top: 24.3%;
+    left: 24.6%;
+    width: 1280px;
+    height: 780px;
+}
+
+.centered {
+    border: 1px solid black;
+    position: fixed;
+    top: 25%;
+    left: 25%;
+    width: 1280px;
+    height:780px;
+}
+
+
+.title {
+    position: fixed;
+    top: 15%;
+    left: 40%;
+    font-size: xxx-large;
+    width: 1280px;
+    height: 800px;
+}
+
+.front {
+    position: fixed;
+    top: 35%;
+    left: 40%;
+    font-size: xxx-large;
+    width: 1280px;
+    height: 800px;
+}
+
