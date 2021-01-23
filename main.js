@@ -122,7 +122,20 @@ function loop() {
                         score++;
                 }
             }
+
+            document.onkeydown = leftKey;
+
+            function leftKey(e) {
+
+                e = e || window.event;
+
+                if (e.keyCode == '37') {
+                    if(hasPrintedDeathMsg == false){
+                        score++;
+                }
+            }
         }
+    }
             //console.log(gameCtx.speed);
             gameCtx.t += 10 * gameCtx.speed;
             // console.log(gameCtx.t);
