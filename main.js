@@ -2,6 +2,11 @@ var c = document.getElementById("game");
 var ctx = c.getContext("2d");
 var motercycle = "good.png";
 var bool = false;
+var present = document.getElementById('present');
+var whatever = document.getElementById('huh');
+whatever.style.display = 'none'
+present.style.display = 'none'
+var canShowPresent = false;
 hideHome();
 donedid();
 hidBackButton();
@@ -108,6 +113,9 @@ var player = new function () {
 
 function loop() {
     if (!gameCtx.hasPrintedDeathMsg) {
+        if(score > 10){
+            canShowPresent = true;
+        }
             if(hasPrintedDeathMsg == false){
                 gameCtx.speed -= (gameCtx.speed - (gameCtx.k.ArrowUp)) * 0.1; 
             }
@@ -200,27 +208,57 @@ function hideStartButton() {
 
 
 function showStartButton() {
-    donedid();
-    hideHome();
-    let button = document.getElementById('start');
-    let left = document.getElementById('left');
-    let right = document.getElementById('right');
-    let settings = document.getElementById('settings');
-    let howTo = document.getElementById('howPlay');
-    let motor = document.getElementById('motor');
-    let rate = document.getElementById('rate');
-    let selection = document.getElementById('selection');
-    let shop = document.getElementById('shop');
-    button.style.display = null;
-    left.style.display = null;  
-    right.style.display = null;
-    settings.style.display = null;
-    howTo.style.display = null;
-    motor.style.display = null;
-    rate.style.display = null;
-    selection.style.display = null;
-    shop.style.display = null;
-    h1.textContent = score;
+    if(!canShowPresent) {
+        donedid();
+        hideHome();
+        let button = document.getElementById('start');
+        let left = document.getElementById('left');
+        let right = document.getElementById('right');
+        let settings = document.getElementById('settings');
+        let howTo = document.getElementById('howPlay');
+        let motor = document.getElementById('motor');
+        let rate = document.getElementById('rate');
+        let selection = document.getElementById('selection');
+        let shop = document.getElementById('shop');
+        button.style.display = null;
+        left.style.display = null;  
+        right.style.display = null;
+        settings.style.display = null;
+        howTo.style.display = null;
+        motor.style.display = null;
+        rate.style.display = null;
+        selection.style.display = null;
+        shop.style.display = null;
+        h1.textContent = score;
+    }
+    else{
+        donedid();
+        hideHome();
+        let button = document.getElementById('start');
+        let left = document.getElementById('left');
+        let right = document.getElementById('right');
+        let settings = document.getElementById('settings');
+        let howTo = document.getElementById('howPlay');
+        let motor = document.getElementById('motor');
+        let rate = document.getElementById('rate');
+        let selection = document.getElementById('selection');
+        let shop = document.getElementById('shop');
+        button.style.display = 'none';
+        left.style.display = 'none';  
+        right.style.display = 'none';
+        settings.style.display = 'none';
+        howTo.style.display = 'none';
+        motor.style.display = 'none';
+        rate.style.display = 'none';
+        selection.style.display = 'none';
+        shop.style.display = 'none';
+        present.style.display = null;
+        h1.textContent = score;
+    }
+}
+
+function hide2() {
+    present.style.display = 'none       ``'
 }
 
 function endGame() {
@@ -297,6 +335,8 @@ function right()
     if (selection.src.endsWith("good.png")) {
         if(score > 50)
             selection.src = "red-motor.png";
+            canShowPresent = true;
+
     } else {
         selection.src = "good.png";
     }
