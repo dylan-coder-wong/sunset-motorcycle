@@ -18,16 +18,17 @@
 </head>
 <link rel="stylesheet" href="styles.css">
 <body>
+    <div id="overlay" class="title-overlay" class="black"></div>
     <div>
         <label class="title" class="type">Motorcycle Driving Game</label>
-        <div class="center"></div>
+        <div class="center" class="shadow"></div>
             <button class="left" id="left" onclick="left();"><</button>
-            <h1 id="h1" class="score">0</h1>
-            <h1 class="hi"> gold: </h1>     
+            <h2 id="h1" class="score">0</h2>
+            <h2 class="hi"> gold: </h2>     
             <button class="restart" id="reset" onclick="startGame();"> Restart </button>
             <button class="died" id="died"> You died </button>
             <img class="first" id="selection" src="good.png" /> 
-            <h1 id="huh"> You earned a motorcycle! Go home and press shop to see what you got </h1>
+            <h2 id="huh" class="huh"> You earned a motorcycle! Go home and press shop to see what you got </h2>
             <button class="earn" id="earned"> You earned a new Motorcycle! </button>
             <!--<button onclick="startGame();" class="button" id="start"> Start ▶️ </button>-->
             <button class="right" id="right" onclick="right();">></button>
@@ -35,7 +36,7 @@
             <button onclick="showHowToPlay();" id="howPlay" class="HowToPlay"> How to play 🧭</button>--->
             <button class="rate" id="rate"> Please Rate Our Game! </button>
             <button class="directions" id="directions" onclick="donedid();">Use the up arrow key to accelarate. Use the left arrow key to rotate left. <br> You can not press the right or down key though. <br> You can earn gold by constantly pressing the up key. <br><br> Click this button to close</button>
-            <button id="close" class="close"> Click to close </button>
+            <!--<button id="close" class="close"> Click to close </button>-->
             <button class="shop" id="shop" onclick="shop();">shop  🛒 </button>
             <button id="VIP" class="VIP"> Become VIP now and get better overall Motorcycles. You can also costimize them! Click this button to get prizes! </button>
             <button class="motor" id="motor"> Pick Your Motorcycle </button>
@@ -44,17 +45,57 @@
             <button class="backButton" id="back" onclick="backb();"> 🔙 </button>
             <button class="red" id="red" onclick="buy();"> buy a motorcycle </button>
             <img src="present.png" class="present" id="present" onclick="hide2();">
+            <audio id="audio" loop preload>
+                <source src="http://codeskulptor-demos.commondatastorage.googleapis.com/pang/paza-moduless.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
         </div>
+    <button class="settingsBack" id="settingsBack"></button>
+    <button class="secondhi"></button>
     </div>
-    <a href="#">
-        <span onclick="SetGameSettings();" id="settings">Settings ⚙️</span>  
+    <a href="#" id="settings" onclick="SetGameSettings();">
+        <span onclick="SetGameSettings()" id="settings">Settings ⚙️</span>  
     </a>
-    <a href="#">
+    <a href="#" id="start" onclick="startGame();">
         <span id="start" onclick="startGame();">Start ▶️</span>
     </a>
-    <a href="#">
+    <a href="#" id="howPlay" onclick="showHowToPlay();">
         <span onclick="showHowToPlay();" id="howPlay">How to play 🧭</span>
     </a>
+        <section>
+            <h1>
+                <span>B</span>
+                <span>O</span>
+                <span>X</span>
+                <span>_</span>
+                <span>W</span>
+                <span>H</span>
+                <span>I</span>
+                <span>T</span>
+                <span>E</span>
+                <span>_</span>
+                <span>S</span>
+                <span>T</span>
+                <span>U</span>
+                <span>D</span>
+                <span>I</span>
+                <span>O</span>
+                <span>S</span>
+                <br>
+                <br>
+                <span>P</span>
+                <span>R</span>
+                <span>E</span>
+                <span>S</span>
+                <span>E</span>
+                <span>N</span>
+                <span>T</span>
+                <span>S</span>
+                <span>.</span>
+                <span>.</span>
+                <span>.</span>
+            </h1>
+        </section>
     <script src="main.js"></script>
 </body>
 
