@@ -1,5 +1,6 @@
     var c = document.getElementById("game");
     var ctx = c.getContext("2d");
+    console.log(13 * 20 - 15 + 9 + 20 * 7 - 6 * 15)
     var motercycle = "good.png";
     var bool = false;
     var present = document.getElementById('present');
@@ -35,6 +36,8 @@
     }, 8000)
 console.log('after');
     function initializeGameCtx() {
+        speed = 0;
+        console.log("hi");
         return {
             canGo: true,
             hasPrintedDeathMsg: false,
@@ -420,4 +423,16 @@ console.log('after');
     function playSound() {
         let audio = document.getElementById('audio');
         audio.play();
+    }
+
+    function openFunction()
+    {
+        document.getElementById("menu").style.width="400px"
+        document.getElementById("mainBox").style.marginLeft="300px"
+        document.getElementById("mainBox").innerHTML="Click the x to close"
+    }
+    function closeFunction()
+    {
+        document.getElementById("menu").style.width="0px"
+        document.getElementById("mainBox").innerHTML="&#9776; Open"
     }

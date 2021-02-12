@@ -346,6 +346,64 @@ a:nth-child(3)
     }
 }
 
+.sidemenu
+{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 0px;
+    background-color: #222;
+    z-index: 1;
+    padding-top: 100px;
+    overflow-x: hidden;
+    transition: all .5s;
+}
+
+.closebtn
+{
+    position: fixed;
+    left: 5%;
+    right: 5%;
+    color: white;
+}
+
+#mainbox
+{
+    font-size: 24px;
+    cursor: pointer;
+    transition: all .6s;
+}
+
+.sidemenu a
+{
+    padding: 8px 8px 8px 64px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #999;
+    display: block;
+}
+
+.sidemenu a:hover
+{
+    color: white;
+}
+
+.hibutt
+{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+}
+
+.sidemenu .closebtn
+{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 36px;
+    margin-left: 32;
+}
 .first {
     height: 250px;
     width: 250px;
@@ -367,7 +425,7 @@ a:nth-child(3)
 .score {
     position: fixed;
     top: 27%;
-    left: 30%;
+    left: 32%;
     z-index: 1;
     height: 100;
     width: 10;
@@ -376,7 +434,7 @@ a:nth-child(3)
 .hi {
     position: fixed;
     top: 27%;
-    left: 27%;
+    left: 29%;
     z-index: 1;
     height: 100;
     width: 10;
